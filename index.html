@@ -448,7 +448,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Arcaea 单曲 PTT 计算器</h1>
+        <h1>Arcaea PTT 计算器</h1>
         
         <!-- 搜索+难度筛选区 -->
         <div class="search-filter-container">
@@ -514,7 +514,7 @@
         let currentFilterDiff = 0;
 
         // 加载曲目数据
-        fetch('songlist6_11_8f.txt')
+        fetch('songlist6_11_8f.json')
             .then(response => response.text())
             .then(data => {
                 const songData = JSON.parse(data);
@@ -688,4 +688,5 @@
         }
     </script>
 </body>
+
 </html>
