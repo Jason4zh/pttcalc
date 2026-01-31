@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcaea PTT 计算器</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft Yahei', 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary: #1e40af;        /* 主色：深蓝色 */
+            --primary-light: #3b82f6;  /* 主色浅版 */
+            --text-main: #333333;      /* 主要文字：深灰 */
+            --text-secondary: #888888; /* 次要文字：浅灰 */
+            --text-light: #999999;     /* 浅色文字：浅灰 */
+            --bg-main: #ffffff;        /* 主背景：白 */
+            --bg-light: #f5f5f5;       /* 浅背景：浅灰 */
+            --bg-hover: #eff6ff;       /* 悬停背景 */
+            --border-light: #e0e0e0;   /* 边框：浅灰 */
+            --card-shadow: 0 2px 12px rgba(0,0,0,0.06); /* 卡片阴影 */
+            --btn-shadow: 0 2px 4px rgba(30, 64, 175, 0.1); /* 按钮阴影 */
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.4;
+            height: 100vh; /* 页面高度占满视口 */
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 120px; /* 给底部总PTT预留空间 */
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 15px;
+            flex: 1; /* 容器占满剩余高度 */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        /* 搜索+筛选容器 */
+        .search-filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--bg-main);
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        #searchInput {
+            flex: 1;
+            min-width: 300px;
+            padding: 12px 15px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.2s ease;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+        }
+
+        #searchInput:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        /* 美化后的难度筛选样式 */
+        .difficulty-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            font-size: 14px;
+            color: var(--text-main);
+        }
+
+        .difficulty-filter span {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        /* 隐藏原生单选框 */
+        .difficulty-filter input[type="radio"] {
+            display: none;
+        }
+
+        /* 自定义按钮式难度选项 */
+        .difficulty-filter label {
+            cursor: pointer;
+            padding: 8px 16px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            background-color: var(--bg-main);
+            color: var(--text-secondary);
+            font-size: 13px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .difficulty-filter label:hover {
+            background-color: var(--bg-hover);
+            border-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        /* 选中状态样式 */
+        .difficulty-filter input[type="radio"]:checked + label {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: var(--btn-shadow);
+            font-weight: 500;
+        }
+
+        /* 曲目列表容器：固定高度，不遮挡底部总PTT */
+        .song-table-wrapper {
+            /* 固定高度：视口高度 - 标题/搜索框高度 - 底部总PTT高度 */
+            height: calc(100vh - 260px);
+            overflow: hidden; /* 隐藏溢出 */
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 10px;
+        }
+
+        .song-table {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-main);
+        }
+
+        /* 表头样式 */
+        .header-row {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 13px;
+            flex-shrink: 0; /* 表头不收缩 */
+        }
+
+        /* 歌曲列表：滚动区域 */
+        .song-list {
+            flex: 1; /* 占满剩余高度 */
+            overflow-y: auto; /* 垂直滚动，溢出隐藏 */
+            overflow-x: hidden; /* 水平溢出隐藏 */
+        }
+
+        /* 单行歌曲样式（极简版） */
+        .song-row {
+            display: flex;
+            border-bottom: 1px solid var(--border-light);
+            transition: background-color 0.2s ease;
+            align-items: center;
+            height: 65px; /* 极致紧凑行高 */
+        }
+
+        .song-row:last-child {
+            border-bottom: none;
+        }
+
+        .song-row:not(.header-row):hover {
+            background-color: var(--bg-hover);
+        }
+
+        /* 列样式（极简版） */
+        .col {
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* 列宽度分配（极简版） */
+        .col.title { 
+            flex: 2.2;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+        .col.artist { 
+            flex: 1.2;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+        .col.bpm { 
+            flex: 0.5;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+        .col.diff-info { 
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 12px;
+        }
+        .col.diff-info span:first-child {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .col.score-ptt { 
+            flex: 2.5; 
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-right: 15px;
+        }
+
+        /* 分数输入框样式（极简版） */
+        .score-input {
+            width: 100px; 
+            padding: 8px 10px; 
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            outline: none;
+            font-size: 13px;
+            transition: all 0.2s ease;
+            color: var(--text-main);
+        }
+        .score-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        /* 结果显示样式（极简版） */
+        .result {
+            display: flex;
+            gap: 10px; 
+            font-size: 13px;
+            align-items: center;
+            flex: 1;
+        }
+        .ptt { 
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .rank { 
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        /* 无结果提示 */
+        .no-result {
+            padding: 20px;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 总PTT容器样式：固定在屏幕底部 */
+        .total-ptt-container {
+            position: fixed; /* 固定定位 */
+            bottom: 0;       /* 贴紧底部 */
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: var(--bg-light);
+            z-index: 100;    /* 置顶显示 */
+            border-top: 1px solid var(--border-light);
+        }
+
+        .total-ptt-card {
+            background-color: var(--bg-main);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 20px 40px;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .total-ptt-title {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .total-ptt-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .ptt-detail {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        /* 滚动条美化 */
+        .song-list::-webkit-scrollbar {
+            width: 8px;
+        }
+        .song-list::-webkit-scrollbar-track {
+            background: var(--bg-light);
+            border-radius: 4px;
+        }
+        .song-list::-webkit-scrollbar-thumb {
+            background: var(--border-light);
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+        .song-list::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-light);
+        }
+
+        /* 响应式适配（极简版） */
+        @media (max-width: 1200px) {
+            .song-table-wrapper {
+                height: calc(100vh - 240px);
+            }
+            .song-row {
+                height: 60px;
+            }
+            .col.title {
+                font-size: 14px;
+            }
+            .result {
+                font-size: 12px;
+            }
+            .ptt {
+                font-size: 13px;
+            }
+            .total-ptt-card {
+                padding: 18px 30px;
+            }
+            .total-ptt-value {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 110px;
+            }
+            .search-filter-container {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                padding: 12px;
+            }
+            #searchInput {
+                min-width: unset;
+            }
+            .difficulty-filter {
+                justify-content: center;
+                gap: 6px;
+            }
+            .difficulty-filter label {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .song-table-wrapper {
+                height: calc(100vh - 220px);
+            }
+            .song-row {
+                height: auto;
+                min-height: 75px;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                padding: 8px 0;
+            }
+            .col {
+                flex: 100% !important;
+                padding: 4px 12px;
+            }
+            .header-row {
+                display: none;
+            }
+            .col.title {
+                font-size: 15px;
+                border-bottom: 1px solid var(--border-light);
+                padding-bottom: 6px;
+                margin-bottom: 6px;
+            }
+            .col.artist, .col.bpm, .col.diff-info {
+                display: inline-block;
+                padding: 0 8px 0 0;
+                font-size: 11px;
+            }
+            .col.score-ptt {
+                padding: 4px 12px;
+            }
+            .score-input {
+                width: 100%;
+            }
+            .result {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 12px;
+                font-size: 12px;
+            }
+            .total-ptt-container {
+                padding: 12px;
+            }
+            .total-ptt-card {
+                width: 100%;
+                border-radius: 8px;
+                padding: 15px 20px;
+            }
+            .total-ptt-value {
+                font-size: 28px;
+            }
+            .ptt-detail {
+                gap: 15px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arcaea 单曲 PTT 计算器</h1>
+        
+        <!-- 搜索+难度筛选区 -->
+        <div class="search-filter-container">
+            <input type="text" id="searchInput" placeholder="搜索歌曲名/艺术家...">
+            <!-- 美化后的难度筛选单选框 -->
+            <div class="difficulty-filter">
+                <span>筛选难度：</span>
+                <input type="radio" name="diffFilter" id="diff0" value="0" checked>
+                <label for="diff0">Present</label>
+                
+                <input type="radio" name="diffFilter" id="diff1" value="1">
+                <label for="diff1">Past</label>
+                
+                <input type="radio" name="diffFilter" id="diff2" value="2">
+                <label for="diff2">Future</label>
+                
+                <input type="radio" name="diffFilter" id="diff3" value="3">
+                <label for="diff3">Beyond</label>
+                
+                <input type="radio" name="diffFilter" id="diff4" value="4">
+                <label for="diff4">Eternal</label>
+            </div>
+        </div>
+
+        <!-- 曲目列表（固定高度，溢出滚动） -->
+        <div class="song-table-wrapper">
+            <div class="song-table">
+                <!-- 表头 -->
+                <div class="song-row header-row">
+                    <div class="col title">歌曲名</div>
+                    <div class="col artist">艺术家</div>
+                    <div class="col bpm">BPM</div>
+                    <div class="col diff-info">难度/定数</div>
+                    <div class="col score-ptt">分数/PTT/等级</div>
+                </div>
+                
+                <!-- 动态渲染的曲目行（滚动区域） -->
+                <div id="songList" class="song-list"></div>
+            </div>
+        </div>
+
+        <!-- 总PTT显示区域（固定在可视区域底部） -->
+        <div class="total-ptt-container">
+            <div class="total-ptt-card">
+                <div class="total-ptt-title">总 Potential (PTT)</div>
+                <div class="total-ptt-value" id="totalPtt">0.000</div>
+                <div class="ptt-detail">
+                    <span>B30: <span id="b30Value">0.000</span></span>
+                    <span>B10: <span id="b10Value">0.000</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 存储所有歌曲数据和分数记录
+        let allSongs = [];
+        const STORAGE_KEY = 'arcaeaScores'; // localStorage键名
+        let scoreRecords = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; // 分数记录
+        // 难度全称映射
+        const ratingClassMap = ['Present', 'Past', 'Future', 'Beyond', 'Eternal'];
+        // 当前选中的筛选难度（默认Present）
+        let currentFilterDiff = 0;
+
+        // 加载曲目数据
+        fetch('songlist6_11_8f.txt')
+            .then(response => response.text())
+            .then(data => {
+                const songData = JSON.parse(data);
+                allSongs = songData.songs.filter(song => !song.deleted); // 过滤已删除歌曲
+                
+                // 绑定难度筛选事件
+                const diffFilterRadios = document.querySelectorAll('input[name="diffFilter"]');
+                diffFilterRadios.forEach(radio => {
+                    radio.addEventListener('change', (e) => {
+                        currentFilterDiff = parseInt(e.target.value);
+                        renderSongList(); // 筛选后重新渲染
+                    });
+                });
+
+                // 绑定搜索事件
+                const searchInput = document.getElementById('searchInput');
+                searchInput.addEventListener('input', () => {
+                    renderSongList(); // 搜索后重新渲染
+                });
+
+                renderSongList(); // 初始渲染
+                calculateTotalPTT(); // 初始计算总PTT
+            })
+            .catch(error => console.error('加载曲目数据失败:', error));
+
+        // 渲染曲目列表（按筛选难度展示）
+        function renderSongList() {
+            const songListEl = document.getElementById('songList');
+            const searchKeyword = document.getElementById('searchInput').value.trim().toLowerCase();
+            songListEl.innerHTML = ''; // 清空原有内容
+
+            // 筛选逻辑：1. 包含选中难度 2. 匹配搜索关键词
+            const filteredSongs = allSongs.filter(song => {
+                // 1. 检查是否包含选中的难度
+                const hasTargetDiff = song.difficulties.some(diff => diff.ratingClass === currentFilterDiff);
+                // 2. 检查搜索关键词
+                const titleMatch = (song.title_localized.en || '').toLowerCase().includes(searchKeyword);
+                const artistMatch = (song.artist || '').toLowerCase().includes(searchKeyword);
+                return hasTargetDiff && (titleMatch || artistMatch);
+            });
+
+            if (filteredSongs.length === 0) {
+                songListEl.innerHTML = '<div class="no-result">未找到匹配的歌曲</div>';
+                return;
+            }
+
+            // 渲染筛选后的曲目（仅展示选中难度的信息）
+            filteredSongs.forEach(song => {
+                // 获取该歌曲的目标难度信息
+                const targetDiff = song.difficulties.find(diff => diff.ratingClass === currentFilterDiff);
+                if (!targetDiff) return;
+
+                // 创建单行歌曲项
+                const songRow = document.createElement('div');
+                songRow.className = 'song-row';
+                // 生成唯一标识
+                const recordKey = `${song.id}_${currentFilterDiff}`;
+
+                // 歌曲行内容（仅展示选中难度）
+                songRow.innerHTML = `
+                    <div class="col title">${song.title_localized.en || '未知歌曲'}</div>
+                    <div class="col artist">${song.artist || '未知艺术家'}</div>
+                    <div class="col bpm">${song.bpm || song.bpm_base || '-'}</div>
+                    <div class="col diff-info">
+                        <span>${ratingClassMap[currentFilterDiff]}</span>
+                        <span>定数: ${targetDiff.rating}</span>
+                    </div>
+                    <div class="col score-ptt">
+                        <input type="number" class="score-input" placeholder="输入分数 (0-10000000)" min="0" max="10000000" data-key="${recordKey}">
+                        <div class="result">
+                            <span class="ptt">PTT: -</span>
+                            <span class="rank">等级: -</span>
+                        </div>
+                    </div>
+                `;
+
+                // 获取元素
+                const scoreInput = songRow.querySelector('.score-input');
+                const rankEl = songRow.querySelector('.rank');
+                const pttEl = songRow.querySelector('.ptt');
+                
+                // 从localStorage回填数据
+                if (scoreRecords[recordKey]) {
+                    scoreInput.value = scoreRecords[recordKey].score;
+                    rankEl.textContent = `等级: ${scoreRecords[recordKey].rank}`;
+                    pttEl.textContent = `PTT: ${scoreRecords[recordKey].ptt.toFixed(3)}`;
+                }
+
+                // 分数输入事件：计算+存储
+                scoreInput.addEventListener('input', () => {
+                    const score = parseInt(scoreInput.value) || 0;
+                    const { rank, ptt } = calculatePTT(score, targetDiff.rating);
+                    const key = scoreInput.dataset.key;
+                    
+                    // 更新显示
+                    rankEl.textContent = `等级: ${rank}`;
+                    pttEl.textContent = `PTT: ${ptt.toFixed(3)}`;
+                    
+                    // 存储到localStorage
+                    if (score > 0) {
+                        scoreRecords[key] = { score, rank, ptt };
+                    } else {
+                        delete scoreRecords[key]; // 分数为0时删除记录
+                    }
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(scoreRecords));
+                    
+                    // 实时计算总PTT
+                    calculateTotalPTT();
+                });
+
+                songListEl.appendChild(songRow);
+            });
+        }
+
+        // 计算单曲PTT和等级
+        function calculatePTT(score, constant) {
+            let rank = '无';
+            let ptt = 0;
+
+            // 等级判定规则
+            if (score >= 10000000) {
+                rank = 'PURE MEMORY';
+                ptt = constant + 2;
+            } else if (score >= 9900000) {
+                rank = 'EX+';
+                ptt = constant + 1 + (score - 9800000) / 200000;
+            } else if (score >= 9800000) {
+                rank = 'EX';
+                ptt = constant + 1 + (score - 9800000) / 200000;
+            } else if (score >= 9500000) {
+                rank = 'AA';
+                ptt = constant + (score - 9500000) / 300000;
+            } else if (score >= 9200000) {
+                rank = 'A';
+                ptt = constant + (score - 9500000) / 300000;
+            } else if (score >= 8900000) {
+                rank = 'B';
+                ptt = constant + (score - 9500000) / 300000;
+            } else if (score >= 8600000) {
+                rank = 'C';
+                ptt = constant + (score - 9500000) / 300000;
+            } else if (score > 0) {
+                rank = 'D';
+                ptt = constant + (score - 9500000) / 300000;
+            }
+
+            // PTT最低为0
+            ptt = Math.max(0, ptt);
+            return { rank, ptt };
+        }
+
+        // 计算总PTT：(b30 + b10)/40
+        function calculateTotalPTT() {
+            // 提取所有有效的单曲PTT
+            const allPtts = Object.values(scoreRecords)
+                .map(item => item.ptt)
+                .filter(ptt => ptt > 0) // 过滤0值
+                .sort((a, b) => b - a); // 降序排序
+
+            // 计算b30：前30个最高PTT的总和
+            const b30 = allPtts.slice(0, 30).reduce((sum, ptt) => sum + ptt, 0);
+            // 计算b10：前10个最高PTT的总和
+            const b10 = allPtts.slice(0, 10).reduce((sum, ptt) => sum + ptt, 0);
+            // 总PTT
+            const totalPtt = (b30 + b10) / 40;
+
+            // 更新页面显示
+            document.getElementById('totalPtt').textContent = totalPtt.toFixed(3);
+            document.getElementById('b30Value').textContent = b30.toFixed(3);
+            document.getElementById('b10Value').textContent = b10.toFixed(3);
+        }
+    </script>
+</body>
+</html>
