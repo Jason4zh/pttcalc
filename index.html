@@ -13,6 +13,9 @@
         <div class="search-filter-container">
             <input type="text" id="searchInput" placeholder="搜索歌曲名/艺术家...">
             <button id="sortButton" title="切换排序">排序：默认</button>
+            <button id="exportButton" class="export-btn" title="导出成绩">导出成绩</button>
+            <button id="importButton" class="import-btn" title="导入成绩">导入成绩</button>
+            <input type="file" id="importFile" accept=".pttdat" style="display:none">
             
             <div class="difficulty-filter">
                 <span>筛选难度：</span>
@@ -388,6 +391,76 @@
                 currentSortIndex = (currentSortIndex + 1) % sortModes.length;
                 sortButton.textContent = labels[sortModes[currentSortIndex]] || '排序';
                 renderSongList();
+            });
+        }
+
+        // 导出 / 导入 功能
+        const exportButton = document.getElementById('exportButton');
+        const importButton = document.getElementById('importButton');
+        const importFile = document.getElementById('importFile');
+
+        if (exportButton) {
+            exportButton.addEventListener('click', () => {
+                try {
+                    const payload = {
+                        exportedAt: new Date().toISOString(),
+                        scores: scoreRecords
+                    };
+                    const json = JSON.stringify(payload, null, 2);
+                    const blob = new Blob([json], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    const timestamp = new Date().toISOString().replace(/[:]/g, '-').replace(/T/, '_').split('.')[0];
+                    a.download = `pttcalcData${timestamp}.pttdat`;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(url);
+                } catch (e) {
+                    alert('导出失败：' + e.message);
+                }
+            });
+        }
+
+        if (importButton && importFile) {
+            importButton.addEventListener('click', () => importFile.click());
+
+            importFile.addEventListener('change', (e) => {
+                const file = importFile.files && importFile.files[0];
+                if (!file) return;
+                if (!file.name.toLowerCase().endsWith('.pttdat')) {
+                    alert('仅支持 .pttdat 格式的文件');
+                    importFile.value = '';
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = () => {
+                    try {
+                        const text = String(reader.result || '');
+                        const obj = JSON.parse(text);
+                        if (!obj || typeof obj !== 'object' || !obj.scores || typeof obj.scores !== 'object') {
+                            throw new Error('文件格式不正确：必须为 .pttdat 且包含 scores 字段');
+                        }
+
+                        const incoming = obj.scores;
+                        // 合并导入数据（以导入的数据覆盖本地同键条目）
+                        scoreRecords = Object.assign({}, scoreRecords, incoming);
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify(scoreRecords));
+                        renderSongList();
+                        calculateTotalPTT();
+                        alert('导入成功，已更新成绩记录');
+                    } catch (err) {
+                        alert('导入失败：' + err.message);
+                    } finally {
+                        importFile.value = '';
+                    }
+                };
+                reader.onerror = () => {
+                    alert('读取文件失败');
+                    importFile.value = '';
+                };
+                reader.readAsText(file, 'utf-8');
             });
         }
     </script>

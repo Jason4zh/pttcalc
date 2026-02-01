@@ -121,6 +121,30 @@ h1 {
     border-color: var(--primary);
 }
 
+/* 导入/导出 按钮样式，保持与排序按钮一致 */
+.export-btn, .import-btn {
+    flex: 0 0 auto;
+    margin-left: 8px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+    transition: all 0.2s ease;
+}
+.export-btn:hover, .import-btn:hover {
+    transform: translateY(-2px);
+}
+.export-btn:focus, .import-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30,64,175,0.12);
+    border-color: var(--primary);
+}
+
 .difficulty-filter {
     display: flex;
     flex-wrap: wrap;
