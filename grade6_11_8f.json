@@ -1,0 +1,4138 @@
+[
+  {
+    "Name": "Testify",
+    "PST": "7.8",
+    "PRS": "9.4",
+    "FTR": "10.9",
+    "BYD": "12.0",
+    "ETR": ""
+  },
+  {
+    "Name": "Designant.",
+    "PST": "7.5",
+    "PRS": "9.6",
+    "FTR": "10.9",
+    "BYD": "11.9",
+    "ETR": ""
+  },
+  {
+    "Name": "Tempestissimo",
+    "PST": "7.0",
+    "PRS": "9.5",
+    "FTR": "10.7",
+    "BYD": "11.7",
+    "ETR": ""
+  },
+  {
+    "Name": "ArcanaEden",
+    "PST": "5.5",
+    "PRS": "8.7",
+    "FTR": "10.5",
+    "BYD": "11.6",
+    "ETR": ""
+  },
+  {
+    "Name": "Pentiment",
+    "PST": "7.0",
+    "PRS": "8.7",
+    "FTR": "10.4",
+    "BYD": "11.5",
+    "ETR": ""
+  },
+  {
+    "Name": "AetherCrest:Astral",
+    "PST": "6.0",
+    "PRS": "8.9",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": "11.5"
+  },
+  {
+    "Name": "LamentRain",
+    "PST": "6.5",
+    "PRS": "8.8",
+    "FTR": "10.6",
+    "BYD": "11.4",
+    "ETR": ""
+  },
+  {
+    "Name": "AbstruseDilemma",
+    "PST": "5.5",
+    "PRS": "8.9",
+    "FTR": "11.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Arghena",
+    "PST": "7.5",
+    "PRS": "9.6",
+    "FTR": "11.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ALTEREGO",
+    "PST": "6.5",
+    "PRS": "9.2",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": "11.3"
+  },
+  {
+    "Name": "ExtradimensionalCosmicPhenomenon",
+    "PST": "6.5",
+    "PRS": "8.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": "11.3"
+  },
+  {
+    "Name": "Aegleseeker",
+    "PST": "5.5",
+    "PRS": "9.1",
+    "FTR": "11.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GrievousLady",
+    "PST": "6.5",
+    "PRS": "9.3",
+    "FTR": "11.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FractureRay",
+    "PST": "6.0",
+    "PRS": "9.5",
+    "FTR": "11.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "#1f1e33",
+    "PST": "5.5",
+    "PRS": "9.2",
+    "FTR": "11.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WorldEnder",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.0",
+    "BYD": "11.1",
+    "ETR": ""
+  },
+  {
+    "Name": "SAIKYOSTRONGER",
+    "PST": "5.5",
+    "PRS": "9.4",
+    "FTR": "11.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LAMIA",
+    "PST": "5.0",
+    "PRS": "8.5",
+    "FTR": "11.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "UndyingMacula",
+    "PST": "5.5",
+    "PRS": "8.7",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": "11.0"
+  },
+  {
+    "Name": "Misdeed-labontédeDieuetlIoriginedumal-",
+    "PST": "5.5",
+    "PRS": "8.5",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "InfiniteStrife,",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "10.9",
+    "ETR": ""
+  },
+  {
+    "Name": "TEmPTaTiON",
+    "PST": "5.0",
+    "PRS": "8.2",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CHAOS",
+    "PST": "5.5",
+    "PRS": "7.5",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Vulcānus",
+    "PST": "5.5",
+    "PRS": "8.5",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AndReviveTheMelody",
+    "PST": "5.5",
+    "PRS": "8.5",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BreachofFaith",
+    "PST": "5.5",
+    "PRS": "8.4",
+    "FTR": "10.3",
+    "BYD": "10.9",
+    "ETR": ""
+  },
+  {
+    "Name": "DAIAT-TheFirstSeekerofSouls-",
+    "PST": "5.5",
+    "PRS": "8.4",
+    "FTR": "10.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ViRTUS",
+    "PST": "5.5",
+    "PRS": "8.6",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.9"
+  },
+  {
+    "Name": "MEGALOVANIA(CamelliaRemix)",
+    "PST": "5.5",
+    "PRS": "8.4",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": "10.9"
+  },
+  {
+    "Name": "WeIreAllGonnaDie",
+    "PST": "5.5",
+    "PRS": "8.0",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": "10.9"
+  },
+  {
+    "Name": "Welcome,QueenofFiction.",
+    "PST": "5.0",
+    "PRS": "8.5",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": "10.9"
+  },
+  {
+    "Name": "Code:Oblivion",
+    "PST": "5.5",
+    "PRS": "8.3",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.9"
+  },
+  {
+    "Name": "RingedGenesis",
+    "PST": "5.5",
+    "PRS": "8.4",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dantalion",
+    "PST": "5.0",
+    "PRS": "8.2",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BUCHiGiREBerserker",
+    "PST": "5.0",
+    "PRS": "8.6",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ω4",
+    "PST": "3.5",
+    "PRS": "7.8",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DivineLightofMyriad",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GENOCIDER",
+    "PST": "4.5",
+    "PRS": "8.9",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Stasis",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PRIMITIVELIGHTS",
+    "PST": "5.5",
+    "PRS": "8.8",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SpiderIsThread",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ⅱ́",
+    "PST": "5.0",
+    "PRS": "8.9",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TeraVolt",
+    "PST": "5.0",
+    "PRS": "8.9",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Meta-Mysteria",
+    "PST": "5.0",
+    "PRS": "7.8",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DistortedFate",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "Désive",
+    "PST": "5.0",
+    "PRS": "8.0",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "BlackMInD",
+    "PST": "5.0",
+    "PRS": "8.0",
+    "FTR": "10.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Nightmare",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "Lilly",
+    "PST": "5.0",
+    "PRS": "8.4",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "ANDORXOR",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "MARENYX",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.8"
+  },
+  {
+    "Name": "ouroboros-twinstrokeoftheend-",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Cyaegha",
+    "PST": "5.5",
+    "PRS": "8.4",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WorldVanquisher",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AMAZINGMIGHTYYYY!!!!",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "REKKARESONANCE",
+    "PST": "5.0",
+    "PRS": "8.9",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "NULLAPOPHENIA",
+    "PST": "4.5",
+    "PRS": "8.8",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "KYORENROMANCE",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "InvertedWorld",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.7"
+  },
+  {
+    "Name": "DonItFightTheMusic",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": "10.7"
+  },
+  {
+    "Name": "AlterGate",
+    "PST": "5.5",
+    "PRS": "8.7",
+    "FTR": "10.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Xterfusion",
+    "PST": "4.5",
+    "PRS": "8.3",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": "10.7"
+  },
+  {
+    "Name": "Signal",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": "10.7"
+  },
+  {
+    "Name": "AxiumCrisis",
+    "PST": "5.5",
+    "PRS": "8.5",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "cyanine",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "corps-sans-organes",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AttraqtiA",
+    "PST": "4.0",
+    "PRS": "8.3",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Overwhelm",
+    "PST": "5.0",
+    "PRS": "8.5",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Seclusion",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LiveFastDieYoung",
+    "PST": "4.5",
+    "PRS": "8.5",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Goodbye,Merry-Go-Round.",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CrimsonThrone",
+    "PST": "4.0",
+    "PRS": "8.0",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ManicJeer",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "[X]",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "UNKNOWNLEVELS",
+    "PST": "4.0",
+    "PRS": "8.1",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BacktoBasics",
+    "PST": "5.0",
+    "PRS": "8.7",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MVURBD",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Diesirae",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.6"
+  },
+  {
+    "Name": "AstralQuantization",
+    "PST": "5.0",
+    "PRS": "8.1",
+    "FTR": "10.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SubsphereinEclosion",
+    "PST": "5.0",
+    "PRS": "8.1",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.6"
+  },
+  {
+    "Name": "Singularity",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.5",
+    "BYD": "10.4",
+    "ETR": ""
+  },
+  {
+    "Name": "Halcyon",
+    "PST": "5.5",
+    "PRS": "8.2",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GLORY：ROAD",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GIMMEDABLOOD",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Sheriruth(LaurRemix)",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LightningScrew",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Aurgelmir",
+    "PST": "4.5",
+    "PRS": "8.5",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Chronicle",
+    "PST": "5.0",
+    "PRS": "8.9",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LucidTraveler",
+    "PST": "4.5",
+    "PRS": "8.9",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RiseoftheWorld",
+    "PST": "4.5",
+    "PRS": "8.1",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "EgoEimi",
+    "PST": "5.5",
+    "PRS": "8.6",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "XTREME",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "eden",
+    "PST": "4.5",
+    "PRS": "8.2",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WishUponaSnow",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Aleph-0",
+    "PST": "5.5",
+    "PRS": "8.8",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TwilightConcerto",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "10pt8ion",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "Judgement",
+    "PST": "5.5",
+    "PRS": "8.6",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RainofConflictinaRadiantAbyss",
+    "PST": "5.0",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "SpiritoftheDauntless",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Straightintothelights",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "MEGALOVANIA",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "DullBlade",
+    "PST": "4.5",
+    "PRS": "8.0",
+    "FTR": "10.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BlythE",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "CHAOSBLAST",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "XxiumandPurplehaze",
+    "PST": "2.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "ParanoidArc",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.5"
+  },
+  {
+    "Name": "γuarδina",
+    "PST": "4.0",
+    "PRS": "8.0",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GarakutaDollPlay",
+    "PST": "4.5",
+    "PRS": "6.5",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Felis",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Climax",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LastCelebration",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "KissingLucifer",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PUPA",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "IMPACT",
+    "PST": "3.5",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "10.4",
+    "ETR": ""
+  },
+  {
+    "Name": "TotheMilkyWay",
+    "PST": "5.0",
+    "PRS": "8.9",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Qovat",
+    "PST": "4.5",
+    "PRS": "8.2",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LethalVoltage",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MIRINAE",
+    "PST": "4.5",
+    "PRS": "8.3",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RaysofRemnant",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "10.4",
+    "ETR": ""
+  },
+  {
+    "Name": "Placebo♥Battler",
+    "PST": "5.5",
+    "PRS": "8.3",
+    "FTR": "10.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DualDependency",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "EternityBreak",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "NoWayBack",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "INCARNATOR₀₀",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "TheIRaftItaughtme:yourheartwillalwaysfindaway.",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "MeltyRhapsody",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": "10.4"
+  },
+  {
+    "Name": "MetallicPunisher",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "EtherStrike",
+    "PST": "5.5",
+    "PRS": "8.3",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Tiferet",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ikazuchi",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "IZANA",
+    "PST": "5.0",
+    "PRS": "8.3",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "To:AliceLiddell",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ViyellaIsTears",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HiiroGekka,KyoushounoZetsu(nayuta2017ver.)",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "99Glooms",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ultradiaxon-N3",
+    "PST": "4.5",
+    "PRS": "8.5",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DualDoomDeathmatch",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": "10.3"
+  },
+  {
+    "Name": "SUPERAMBULANCE",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "8-EM",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.3"
+  },
+  {
+    "Name": "BREaK!BREaK!BREaK!",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "10.3"
+  },
+  {
+    "Name": "ROSTPAGEGENE",
+    "PST": "5.0",
+    "PRS": "8.2",
+    "FTR": "10.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "zephyrlasting",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.3"
+  },
+  {
+    "Name": "NirvlucE",
+    "PST": "2.5",
+    "PRS": "7.0",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "αterlβus",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "conflict",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Valhalla:0",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MaliciousMischance",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Löschen",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Quon",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "10.2",
+    "ETR": ""
+  },
+  {
+    "Name": "lastendconductor",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.4",
+    "BYD": "10.2",
+    "ETR": ""
+  },
+  {
+    "Name": "RedolentShape",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "NEOWINGS",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Capella",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Magnolia",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Logos",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Renegade",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "10.2",
+    "ETR": ""
+  },
+  {
+    "Name": "YourBestNightmare",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.9",
+    "BYD": "10.2",
+    "ETR": ""
+  },
+  {
+    "Name": "AngelIsBoundary",
+    "PST": "5.0",
+    "PRS": "8.5",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Grandspell",
+    "PST": "4.5",
+    "PRS": "8.4",
+    "FTR": "10.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PRAGMATISM",
+    "PST": "4.5",
+    "PRS": "8.6",
+    "FTR": "10.1",
+    "BYD": "11.2",
+    "ETR": ""
+  },
+  {
+    "Name": "Gengaozo",
+    "PST": "4.0",
+    "PRS": "8.1",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Medusa",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Trrricksters!!",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "KanbudeTomatteSuguTokeru",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GensounoSatellite",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "BlazinGAIR",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "DonItDie",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "OBLIVION",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "INFINITEDIMENSION",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "Mylifeisminealone!",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "10.1"
+  },
+  {
+    "Name": "Sheriruth",
+    "PST": "5.5",
+    "PRS": "7.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Alexandrite",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ScarletLance",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ViciousHeroism",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.0",
+    "BYD": "11.2",
+    "ETR": ""
+  },
+  {
+    "Name": "Xanatos",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OshamaScramble!",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Bamboo",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HIVEMIND",
+    "PST": "4.0",
+    "PRS": "8.6",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FreeMyself",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MasqueradeLegion",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Chromafill",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ThirdSun",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": "10.0"
+  },
+  {
+    "Name": "TRPNO",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Liar",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "10.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ΛZΛLEΛ",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": "10.0"
+  },
+  {
+    "Name": "Modelista",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "trappolabewitching",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.9",
+    "BYD": "10.6",
+    "ETR": ""
+  },
+  {
+    "Name": "Nhelv",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "10.9",
+    "ETR": ""
+  },
+  {
+    "Name": "Heavensdoor",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "10.8",
+    "ETR": ""
+  },
+  {
+    "Name": "Mirzam",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Antagonism",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Arcahv",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GalaxyFriends",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "7thSense",
+    "PST": "3.0",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SummerFireworksofLove",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TrapCrow",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Astrawalkthrough",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MAXRAGE",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TheSurvivor(GameEdit)",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "NewYorkBackRaise",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "INTERNETYAMERO",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DevillicSphere",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ultimatetaste",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Amekagura",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BeautifulDreamer",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "STARGATEEXTREME",
+    "PST": "4.0",
+    "PRS": "6.0",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "DistortionHuman",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Hypnotize",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "Ashen6oundary",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SwanSong",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ShinchokuDoudesuka?",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "Tic!Tac!Toe!",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "Syriana",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "incompletetheone",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "Vainspire",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "ParadoxPalette",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "~_+",
+    "PST": "4.5",
+    "PRS": "8.0",
+    "FTR": "9.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CHAIN2NITE",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "9.9"
+  },
+  {
+    "Name": "SOUNDWiTCH",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MemoryForest",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LinearAccelerator",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BlackTerritory",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Corruption",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Heavenlycaress",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "EinherjarJoker",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "10.9",
+    "ETR": ""
+  },
+  {
+    "Name": "LostDesire",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Altale",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "9.8",
+    "BYD": "10.0",
+    "ETR": ""
+  },
+  {
+    "Name": "ScarletCage",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GothiveofRa",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Xeraphinite",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FarAwayLight",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "THEULTIMACY",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MazyMetroplex",
+    "PST": "3.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ascent",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HazeofAutumn",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "init()",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MacrocosmicModulation",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Protoflicker",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Defection",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CallimaKarma",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AiDrew",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FLUFFYFLASH",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WorldFragmentsIII(radioedit)",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Genesis",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Hybris(Theonewhoshattered)",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RGB",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "KanjounoMatenrou～Arr.Demetori",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TotheFurthestDream",
+    "PST": "4.5",
+    "PRS": "8.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Technicolour",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "NamelessPassion",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ouvertüre",
+    "PST": "2.5",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LIVHTMYWΔY",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MORNINGLOOM",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "OldSchoolSalvage",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HYPERVISION",
+    "PST": "4.5",
+    "PRS": "7.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "shrink",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WaltzforLorelei",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "CrimsonQuartz",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "LiftOff",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "Ignition",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "yomibito_shirazu",
+    "PST": "4.5",
+    "PRS": "8.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Won'tBackDown",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "U.A.D",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "Miles",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "ScarletLunarEmpress",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "disintegration",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "tabootearsyouup2017",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": "9.8"
+  },
+  {
+    "Name": "Lethaeus",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TheMessage",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Sulfur",
+    "PST": "4.0",
+    "PRS": "6.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Fallensquare",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DXChoseinouFullMetalShojo",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SUPERNOVA",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dreadnought",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MonochromePrincess",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Filament",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BATTLENO.1",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BLRINK",
+    "PST": "3.5",
+    "PRS": "7.8",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "amygdata",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BlackLotus",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BADTEK",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HeartJackin'",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dazzlehop",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Vandalism",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AlterAle",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "goldenslaughterer",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "nέοκόsmo",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "μ",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LovelessDress",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Last|Eternity",
+    "PST": "",
+    "PRS": "",
+    "FTR": "",
+    "BYD": "9.7",
+    "ETR": ""
+  },
+  {
+    "Name": "Let'sRock(Arcaeamix)",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LostintheAbyss",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SACRIFICEfeat.ayame",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "B.B.K.K.B.K.K.",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HotarubinoYuki",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LunaRossa",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Innocence",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": "9.7"
+  },
+  {
+    "Name": "IONOSTREAM",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": "9.7"
+  },
+  {
+    "Name": "AwakenInRuins",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Hailstone",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LastGoodbye",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": "9.7"
+  },
+  {
+    "Name": "BlackMirrorontheWall",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "9.7"
+  },
+  {
+    "Name": "τ(tau)",
+    "PST": "4.5",
+    "PRS": "7.8",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Acheron",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Particle",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": "9.7"
+  },
+  {
+    "Name": "Quon",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "carmine:scythe",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LunarOrbit-believeintheEspebranchroad-",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Astraltale",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Vindication",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AWanderingMelodyofLove",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AvantRaze",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PurpleVerse",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.6",
+    "BYD": "10.6",
+    "ETR": ""
+  },
+  {
+    "Name": "LazyAddiction",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ENERGYSYNERGYMATRIX",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.6",
+    "BYD": "10.3",
+    "ETR": ""
+  },
+  {
+    "Name": "Last",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.0",
+    "BYD": "9.6",
+    "ETR": ""
+  },
+  {
+    "Name": "Heart",
+    "PST": "1.0",
+    "PRS": "5.0",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RemindtheSouls(ShortVersion)",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Stratoliner",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Alone&Lorn",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "epitaxy",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "9.6"
+  },
+  {
+    "Name": "SeetheLights!",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "9.6"
+  },
+  {
+    "Name": "Factorder",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": "9.6"
+  },
+  {
+    "Name": "DataErr0r",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CyberneciaCatharsis",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "IllegalParadise",
+    "PST": "2.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "STAGER(ALLSTAGECLEAR)",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OMAKENOStroke",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "10.3",
+    "ETR": ""
+  },
+  {
+    "Name": "MAHOROBA",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ΟΔΥΣΣΕΙΑ",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "EveninginScarlet",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "NULCTRL",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GIMMICK",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dynitikós",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TransientSpace",
+    "PST": "2.5",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "felysfinalremix",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OnAndOn!!feat.Jenga",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Jingle",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": "9.5"
+  },
+  {
+    "Name": "O、",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "InVain",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "astral.exe",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "EndofTheMoonlight",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SATISFACTION",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": "9.5"
+  },
+  {
+    "Name": "Someday",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ViolaIllyria",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OneStepCloser",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PartyVinyl",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.4",
+    "BYD": "10.3",
+    "ETR": ""
+  },
+  {
+    "Name": "CROSS†SOUL",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Yourvoiceso...feat.Such",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ImpureBird",
+    "PST": "2.0",
+    "PRS": "5.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dreamin'Attraction!!",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RedandBlue",
+    "PST": "4.0",
+    "PRS": "7.8",
+    "FTR": "9.4",
+    "BYD": "10.2",
+    "ETR": ""
+  },
+  {
+    "Name": "YosakuraFubuki",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Specta",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BeThere",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "VECTOЯ",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "AI[UE]OON",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Equilibrium",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Teriqma",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "9.7",
+    "ETR": ""
+  },
+  {
+    "Name": "CROSS†OVER",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Lapis",
+    "PST": "2.0",
+    "PRS": "6.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CrystalGravity",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "withU",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LetyouDIVE!(nitrormx)",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FinalStep!",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SakuraFubuki",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HeadBONKache",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PICO-Pico-Translation!",
+    "PST": "2.0",
+    "PRS": "6.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RedrawtheColorlessWorld",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MANTIS(ArcaeaUltra-BloodrushVIP)",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DRG",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Raven'sPride",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FANTA5Y",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FURETE-MITAI",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": "9.4"
+  },
+  {
+    "Name": "DeathByGlamour",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": "9.4"
+  },
+  {
+    "Name": "IwantYou",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": "9.4"
+  },
+  {
+    "Name": "mod",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OMAJINAI",
+    "PST": "2.5",
+    "PRS": "7.0",
+    "FTR": "9.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GOODTEK(ArcaeaEdit)",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "Oracle",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Ignotus",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "9.9",
+    "ETR": ""
+  },
+  {
+    "Name": "Auxesia",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Syro",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Blaster",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FeelsSoRightfeat.Renko",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Glow",
+    "PST": "4.0",
+    "PRS": "7.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CanIFriendYouonBassbook?Lol",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SmallCloudSugarCandy",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FalseEmbellishment",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BlockedLibrary",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LostEmotionfeat.nomico",
+    "PST": "3.5",
+    "PRS": "7.0",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TheFormula",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HELLOHELL",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "7.5",
+    "BYD": "",
+    "ETR": "9.3"
+  },
+  {
+    "Name": "FloatingWorld",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LostCivilization",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.2",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "Anökumene",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.2",
+    "BYD": "9.9",
+    "ETR": ""
+  },
+  {
+    "Name": "Strongholds",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Rugie",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Phantasia",
+    "PST": "4.0",
+    "PRS": "5.5",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Libertas",
+    "PST": "3.5",
+    "PRS": "5.5",
+    "FTR": "9.2",
+    "BYD": "10.5",
+    "ETR": ""
+  },
+  {
+    "Name": "Aliceàlamode",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dancin'onaCat'sPaw",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "cocoro*cosmetic",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Usedtobe",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LeaveAllBehind",
+    "PST": "2.0",
+    "PRS": "5.5",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Signof\"\"10.5km\"\"",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LadymadeStar",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": "9.2"
+  },
+  {
+    "Name": "qualia-ideaesthesia-",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.1",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "EssenceofTwilight",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Iconoclast",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Journey",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "dropdead",
+    "PST": "1.5",
+    "PRS": "9.5",
+    "FTR": "9.1",
+    "BYD": "10.5",
+    "ETR": ""
+  },
+  {
+    "Name": "EmpireofWinter",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ReviXy",
+    "PST": "3.0",
+    "PRS": "7.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "La'qrymaoftheWasteland",
+    "PST": "3.5",
+    "PRS": "6.5",
+    "FTR": "9.1",
+    "BYD": "10.0",
+    "ETR": ""
+  },
+  {
+    "Name": "FaintLight(ArcaeaEdit)",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Alice'sSuitcase",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LifeisPIANO",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CoastalHighway",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BlueRose",
+    "PST": "2.0",
+    "PRS": "6.0",
+    "FTR": "9.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Prayer",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": "9.1"
+  },
+  {
+    "Name": "FlyburgandEndroll",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "KanagawaCyberCulvert",
+    "PST": "1.0",
+    "PRS": "5.5",
+    "FTR": "9.0",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "Jump",
+    "PST": "4.0",
+    "PRS": "6.0",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Turbocharger",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GalacticLove",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LawlessPoint",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PrimevalTexture",
+    "PST": "3.0",
+    "PRS": "7.5",
+    "FTR": "9.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "memoryfactory.lzh",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Flashback",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Chronostasis",
+    "PST": "3.5",
+    "PRS": "7.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Evoltex(poppi'nmix)",
+    "PST": "2.0",
+    "PRS": "7.0",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MazeNo.9",
+    "PST": "3.0",
+    "PRS": "3.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "MERLIN",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "8.9",
+    "BYD": "9.4",
+    "ETR": ""
+  },
+  {
+    "Name": "Chelsea",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "GiveMeaNightmare",
+    "PST": "3.5",
+    "PRS": "5.5",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "LightsofMuse",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.9",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Surrender",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "nexttoyou",
+    "PST": "4.5",
+    "PRS": "7.0",
+    "FTR": "8.8",
+    "BYD": "9.6",
+    "ETR": ""
+  },
+  {
+    "Name": "SolitaryDream",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Antithese",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.8",
+    "BYD": "9.6",
+    "ETR": ""
+  },
+  {
+    "Name": "VividTheory",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Cosmica",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dialnote",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CYCLES",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CosmoPopFunclub",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HiddenRainbowsofEpicurus",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "7.5",
+    "BYD": "",
+    "ETR": "8.8"
+  },
+  {
+    "Name": "SaintorSinner",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "cryofviyella",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "CallMyNamefeat.Yukacco",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Grimheart",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Senkyou",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BesideYou",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "PaperWitch",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "TsukiniMurakumo,HananiKaze",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "WAITFORDAWN",
+    "PST": "2.5",
+    "PRS": "7.8",
+    "FTR": "8.7",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Heartache",
+    "PST": "1.5",
+    "PRS": "4.5",
+    "FTR": "7.5",
+    "BYD": "",
+    "ETR": "8.7"
+  },
+  {
+    "Name": "WakeinHour",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "7.5",
+    "BYD": "",
+    "ETR": "8.7"
+  },
+  {
+    "Name": "SilentRush",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "FREEF4LL",
+    "PST": "4.0",
+    "PRS": "7.0",
+    "FTR": "8.6",
+    "BYD": "9.8",
+    "ETR": ""
+  },
+  {
+    "Name": "Gekka(ShortVersion)",
+    "PST": "4.0",
+    "PRS": "6.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Aprilshowers",
+    "PST": "2.0",
+    "PRS": "5.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "enchantedlove",
+    "PST": "2.0",
+    "PRS": "4.5",
+    "FTR": "8.6",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Babaroque",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dandelion",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Harutopia~UtopiaofSpring~",
+    "PST": "1.0",
+    "PRS": "4.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Reinvent",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "DDD",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Altair(feat.*spiLa*)",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "syūten",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.5",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SnowWhite",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "8.4",
+    "BYD": "9.7",
+    "ETR": ""
+  },
+  {
+    "Name": "Lumia",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.4",
+    "BYD": "9.5",
+    "ETR": ""
+  },
+  {
+    "Name": "REconstruction",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Moonheart",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.4",
+    "BYD": "9.7",
+    "ETR": ""
+  },
+  {
+    "Name": "RabbitInTheBlackRoom",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Purgatorium",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.4",
+    "BYD": "9.6",
+    "ETR": ""
+  },
+  {
+    "Name": "EccentricTale",
+    "PST": "2.0",
+    "PRS": "5.5",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "INTERNETOVERDOSE",
+    "PST": "3.0",
+    "PRS": "6.5",
+    "FTR": "8.4",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "ShadesofLightinaTranscendentRealm",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.3",
+    "BYD": "9.1",
+    "ETR": ""
+  },
+  {
+    "Name": "Bookmaker(2DVersion)",
+    "PST": "4.5",
+    "PRS": "6.5",
+    "FTR": "8.3",
+    "BYD": "10.0",
+    "ETR": ""
+  },
+  {
+    "Name": "DottoDotfeat.shully",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Tiemedowngently",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Oblivia",
+    "PST": "3.5",
+    "PRS": "5.0",
+    "FTR": "8.3",
+    "BYD": "9.7",
+    "ETR": ""
+  },
+  {
+    "Name": "Ävril-Flickaikrans-",
+    "PST": "3.0",
+    "PRS": "6.0",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "sanskia",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "8.3",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dematerialized",
+    "PST": "1.5",
+    "PRS": "4.5",
+    "FTR": "7.5",
+    "BYD": "",
+    "ETR": "8.3"
+  },
+  {
+    "Name": "Lucifer",
+    "PST": "3.5",
+    "PRS": "5.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Genesis",
+    "PST": "2.0",
+    "PRS": "5.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "OneLastDrive",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "HallofMirrors",
+    "PST": "3.0",
+    "PRS": "5.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "1F√",
+    "PST": "2.5",
+    "PRS": "6.5",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "bluecomet",
+    "PST": "3.5",
+    "PRS": "5.0",
+    "FTR": "8.2",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "I'vehearditsaid",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "8.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Hikari",
+    "PST": "2.5",
+    "PRS": "6.0",
+    "FTR": "8.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Diode",
+    "PST": "2.5",
+    "PRS": "5.5",
+    "FTR": "8.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "BulletWaitingforMe(JamesLandinoremix)",
+    "PST": "2.5",
+    "PRS": "4.5",
+    "FTR": "8.1",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Relentless",
+    "PST": "4.5",
+    "PRS": "6.5",
+    "FTR": "8.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "world.execute(me);",
+    "PST": "3.5",
+    "PRS": "5.0",
+    "FTR": "8.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Prism",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "8.0",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Rise",
+    "PST": "2.5",
+    "PRS": "4.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dement~afterlegend~",
+    "PST": "3.5",
+    "PRS": "6.0",
+    "FTR": "7.8",
+    "BYD": "9.9",
+    "ETR": ""
+  },
+  {
+    "Name": "InfinityHeaven",
+    "PST": "1.5",
+    "PRS": "5.5",
+    "FTR": "7.8",
+    "BYD": "9.6",
+    "ETR": ""
+  },
+  {
+    "Name": "Brandnewworld",
+    "PST": "2.0",
+    "PRS": "4.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Paradise",
+    "PST": "1.0",
+    "PRS": "4.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Clothoandthestargazer",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": "8.8"
+  },
+  {
+    "Name": "MoonlightofSandCastle",
+    "PST": "1.5",
+    "PRS": "5.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "RomanceWars",
+    "PST": "1.0",
+    "PRS": "4.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "Dreamgoeson",
+    "PST": "1.5",
+    "PRS": "5.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "inkar-usi",
+    "PST": "2.0",
+    "PRS": "4.0",
+    "FTR": "7.8",
+    "BYD": "9.4",
+    "ETR": ""
+  },
+  {
+    "Name": "Suomi",
+    "PST": "2.0",
+    "PRS": "5.0",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": "8.9"
+  },
+  {
+    "Name": "FirstSnow",
+    "PST": "2.5",
+    "PRS": "4.5",
+    "FTR": "7.8",
+    "BYD": "",
+    "ETR": ""
+  },
+  {
+    "Name": "SayonaraHatsukoi",
+    "PST": "1.5",
+    "PRS": "4.5",
+    "FTR": "7.0",
+    "BYD": "",
+    "ETR": "8.5"
+  },
+  {
+    "Name": "Fairytale",
+    "PST": "1.0",
+    "PRS": "3.5",
+    "FTR": "7.0",
+    "BYD": "9.5",
+    "ETR": ""
+  },
+  {
+    "Name": "Vexaria",
+    "PST": "2.5",
+    "PRS": "5.0",
+    "FTR": "7.0",
+    "BYD": "9.0",
+    "ETR": ""
+  },
+  {
+    "Name": "Blossoms",
+    "PST": "1.0",
+    "PRS": "4.0",
+    "FTR": "7.0",
+    "BYD": "",
+    "ETR": ""
+  }
+]

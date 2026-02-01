@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft Yahei', 'Arial', sans-serif;
+}
+
+:root {
+    --primary: #1e40af;
+    --primary-light: #3b82f6;
+    --primary-dark: #1e3a8a;
+    --secondary: #8b5cf6;
+    --text-main: #1f2937;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+    --bg-main: #ffffff;
+    --bg-light: #f9fafb;
+    --bg-hover: #f0f9ff;
+    --border-light: #e5e7eb;
+    --border: #d1d5db;
+    --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --btn-shadow: 0 4px 12px rgba(30, 64, 175, 0.15);
+    --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-main);
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.search-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: var(--bg-main);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-light);
+}
+
+#searchInput {
+    flex: 1;
+    min-width: 380px;
+    padding: 18px 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#searchInput:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.12);
+}
+
+/* 排序按钮美化，与筛选标签风格一致 */
+#sortButton {
+    flex: 0 0 auto;
+    margin-left: 12px;
+    padding: 12px 18px;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+}
+
+#sortButton:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--primary-light);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+#sortButton:active { transform: translateY(0); }
+#sortButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30,64,175,0.12);
+    border-color: var(--primary);
+}
+
+.difficulty-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.difficulty-filter span {
+    font-weight: 600;
+    margin-right: 12px;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.difficulty-filter input[type="radio"] {
+    display: none;
+}
+
+.difficulty-filter label {
+    cursor: pointer;
+    padding: 12px 22px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.difficulty-filter label:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--primary-light);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.difficulty-filter input[type="radio"]:checked + label {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: white;
+    box-shadow: var(--btn-shadow);
+    font-weight: 700;
+}
+
+.song-table-wrapper {
+    height: calc(100vh - 320px);
+    /* 允许内部元素溢出显示，避免等级被外层裁切 */
+    overflow: visible;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 20px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-main);
+}
+
+.song-table {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+    /* 拉大表格整体最小宽度，保证列不会被压缩遮挡 */
+    min-width: 1700px;
+}
+
+.header-row {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.ong-list, .song-list {
+    flex: 1;
+    overflow-y: auto;
+    /* 允许横向滚动以查看放大的表格 */
+    overflow-x: auto;
+}
+
+.song-row {
+    display: flex;
+    border-bottom: 1px solid var(--border-light);
+    transition: all 0.25s ease;
+    align-items: center;
+    height: 85px;
+}
+
+.song-row:last-child {
+    border-bottom: none;
+}
+
+.song-row:not(.header-row):hover {
+    background-color: var(--bg-hover);
+}
+
+.col {
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    /* 单行显示，超出用省略号，不换行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.col.title { 
+    flex: 2;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text-main);
+}
+.col.artist { 
+    flex: 0.6;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+.col.bpm { 
+    flex: 0.25;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+.col.diff-info { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+.col.diff-info .diff-name {
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.col.diff-info .constant-container {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.col.diff-info .constant-label {
+    color: var(--text-light);
+    font-size: 12px;
+}
+.col.diff-info .constant-value {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.col.score-ptt { 
+    flex: 2.8;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+    min-width: 0;
+    /* 允许内部的等级/ptt元素显示，不被父列裁切 */
+    overflow: visible;
+}
+
+.score-input {
+    width: 160px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.score-input:focus {
+    border-color: var(--primary);
+    background-color: var(--bg-main);
+    box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.12);
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 14px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    min-width: 0;
+}
+.ptt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 保证 PTT 区域有固定最小宽度，便于始终可见 */
+    flex: 0 0 120px;
+    min-width: 120px;
+    position: relative;
+    z-index: 5;
+}
+.ptt-value {
+    color: var(--text-secondary);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    /* 单行显示 PTT，溢出使用省略号（但我们为 PTT 区域保留最小宽度，通常不会裁切） */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.ptt-value.has-score {
+    color: var(--primary);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.ptt-label {
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.rank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.rank-label {
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 90px;
+    max-width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* 单行显示等级，超出时用省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    z-index: 20;
+}
+.rank-badge.no-score {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    color: var(--text-secondary);
+    border-color: rgba(156, 163, 175, 0.4);
+    box-shadow: 0 4px 12px rgba(156, 163, 175, 0.2);
+}
+.rank-badge.ex-plus {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #78350f;
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+}
+.rank-badge.ex {
+    background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+    color: #1e40af;
+    border-color: rgba(30, 64, 175, 0.5);
+    box-shadow: 0 6px 16px rgba(30, 64, 175, 0.3);
+}
+.rank-badge.aa {
+    background: linear-gradient(135deg, #d1fae5 0%, #86efac 100%);
+    color: #065f46;
+    border-color: rgba(16, 185, 129, 0.5);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3);
+}
+.rank-badge.a {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.3);
+}
+.rank-badge.b {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    color: #374151;
+    border-color: rgba(156, 163, 175, 0.5);
+    box-shadow: 0 6px 16px rgba(156, 163, 175, 0.3);
+}
+.rank-badge.c {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+    color: #6b7280;
+    border-color: rgba(209, 213, 219, 0.5);
+    box-shadow: 0 6px 16px rgba(209, 213, 219, 0.3);
+}
+.rank-badge.d {
+    background: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
+    color: #7f1d1d;
+    border-color: rgba(239, 68, 68, 0.5);
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.3);
+}
+
+.no-result {
+    padding: 60px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.total-ptt-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: var(--bg-light);
+    z-index: 100;
+    border-top: 2px solid var(--border-light);
+}
+
+.total-ptt-card {
+    background: var(--gradient-primary);
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(30, 64, 175, 0.3);
+    padding: 30px 60px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.total-ptt-title {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.total-ptt-value {
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.total-ptt-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+.song-list::-webkit-scrollbar {
+    width: 12px;
+}
+.song-list::-webkit-scrollbar-track {
+    background: var(--bg-light);
+    border-radius: 6px;
+}
+.song-list::-webkit-scrollbar-thumb {
+    background: var(--primary-light);
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+.song-list::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+@media (max-width: 1200px) {
+    .song-table-wrapper {
+        height: calc(100vh - 300px);
+    }
+    .song-row {
+        height: 80px;
+    }
+    .col.title {
+        font-size: 16px;
+    }
+    .col.diff-info .constant-value {
+        font-size: 22px;
+    }
+    .ptt-value {
+        font-size: 20px;
+    }
+    .rank-badge {
+        font-size: 16px;
+        padding: 9px 14px;
+        min-width: 85px;
+        max-width: 110px;
+    }
+    .total-ptt-card {
+        padding: 25px 50px;
+    }
+    .total-ptt-value {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 25px 20px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    .search-filter-container {
+        gap: 20px;
+        padding: 22px;
+    }
+    #searchInput {
+        min-width: 320px;
+        padding: 16px 20px;
+    }
+    .song-table-wrapper {
+        height: calc(100vh - 280px);
+    }
+    .col.score-ptt {
+        flex: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 130px;
+    }
+    .container {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .search-filter-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 20px;
+    }
+    #searchInput {
+        min-width: unset;
+        padding: 16px 18px;
+    }
+    .difficulty-filter {
+        justify-content: center;
+        gap: 10px;
+    }
+    .difficulty-filter label {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    .song-table-wrapper {
+        height: calc(100vh - 260px);
+    }
+    .song-row {
+        height: auto;
+        min-height: 100px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 14px 0;
+    }
+    .col {
+        flex: 100% !important;
+        padding: 8px 16px;
+    }
+    .header-row {
+        display: none;
+    }
+    .col.title {
+        font-size: 18px;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .col.artist, .col.bpm {
+        display: inline-block;
+        padding: 0 12px 0 0;
+        font-size: 14px;
+    }
+    .col.diff-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    .col.diff-info .constant-value {
+        font-size: 24px;
+    }
+    .col.score-ptt {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 0 16px;
+    }
+    .score-input {
+        width: 100%;
+        padding: 14px;
+    }
+    .result {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        min-width: unset;
+    }
+    .ptt-container, .rank-container {
+        min-width: unset;
+        width: 100%;
+    }
+    .ptt-value {
+        font-size: 22px;
+    }
+    .rank-badge {
+        padding: 10px 12px;
+        font-size: 18px;
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 18px;
+    }
+    .total-ptt-container {
+        padding: 20px;
+    }
+    .total-ptt-card {
+        width: 100%;
+        border-radius: 16px;
+        padding: 25px 40px;
+    }
+    .total-ptt-value {
+        font-size: 48px;
+    }
+    /* 移动端使排序按钮占满行并取消左间距 */
+    #sortButton {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .search-filter-container {
+        padding: 18px;
+    }
+    #searchInput {
+        padding: 14px 16px;
+    }
+    .difficulty-filter {
+        gap: 8px;
+    }
+    .difficulty-filter label {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .song-table-wrapper {
+        height: calc(100vh - 240px);
+    }
+    .total-ptt-card {
+        padding: 20px 30px;
+    }
+    .total-ptt-value {
+        font-size: 44px;
+    }
+}
