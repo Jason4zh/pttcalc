@@ -262,7 +262,7 @@
                     rankEl.textContent = scoreRecords[recordKey].rank;
                     rankEl.className = `rank-badge ${getRankClass(scoreRecords[recordKey].rank)}`;
                     rankEl.classList.remove('no-score');
-                    pttEl.textContent = Math.floor(scoreRecords[recordKey].ptt * 100) / 100;
+                    pttEl.textContent = Math.floor(scoreRecords[recordKey].ptt * 10000) / 10000;
                     pttEl.classList.add('has-score');
                 } else {
                     rankEl.textContent = '-';
@@ -281,7 +281,7 @@
                         rankEl.textContent = rank;
                         rankEl.className = `rank-badge ${getRankClass(rank)}`;
                         rankEl.classList.remove('no-score');
-                        pttEl.textContent = Math.floor(ptt * 100) / 100;
+                        pttEl.textContent = Math.floor(ptt * 10000) / 10000;
                         pttEl.classList.add('has-score');
                         
                         scoreRecords[key] = { score, rank, ptt };
@@ -357,7 +357,7 @@
             const b10 = allPtts.slice(0, 10).reduce((sum, ptt) => sum + ptt, 0);
             const totalPtt = (b30 + b10) / 40;
 
-            document.getElementById('totalPtt').textContent = Math.floor(totalPtt * 100) / 100;
+            document.getElementById('totalPtt').textContent = Math.floor(totalPtt * 10000) / 10000;
         }
 
         // 排序模式与控制
@@ -465,4 +465,5 @@
         }
     </script>
 </body>
+
 </html>
