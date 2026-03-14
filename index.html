@@ -19,10 +19,10 @@
             
             <div class="difficulty-filter">
                 <span>筛选难度：</span>
-                <input type="radio" name="diffFilter" id="diff0" value="1">
+                <input type="radio" name="diffFilter" id="diff0" value="1" checked>
                 <label for="diff0">Past</label>
                 
-                <input type="radio" name="diffFilter" id="diff1" value="0" checked>
+                <input type="radio" name="diffFilter" id="diff1" value="0">
                 <label for="diff1">Present</label>
                 
                 <input type="radio" name="diffFilter" id="diff2" value="2">
@@ -64,11 +64,11 @@
         const STORAGE_KEY = 'arcaeaScores';
         let scoreRecords = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
         const ratingClassMap = ['Present', 'Past', 'Future', 'Beyond', 'Eternal'];
-        let currentFilterDiff = 0;
+        let currentFilterDiff = 1;
         const gradeMap = {};
         const gradeFields = ['PRS','PST','FTR','BYD','ETR'];
 
-        fetch('songlist6_11_8f.json')
+        fetch('songlist.json')
             .then(response => response.text())
             .then(data => {
                 const songData = JSON.parse(data);
@@ -90,24 +90,58 @@
                 renderSongList();
                 calculateTotalPTT();
             })
-            .catch(error => console.error('加载曲目数据失败:', error));
+            .catch(error => console.error(error));
             
-        fetch('grade6_11_8f.json')
+        fetch('grade.html')
             .then(response => response.text())
             .then(data => {
                 try {
-                    const gradeData = JSON.parse(data);
-                    gradeData.forEach(item => {
-                        if (item && item.Name) {
-                            const key = String(item.Name).replace(/\s+/g, '').toLowerCase();
-                            gradeMap[key] = item;
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+                    const rows = doc.querySelectorAll('tbody tr');
+                    rows.forEach(row => {
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 6) {
+                            const name = cells[0].textContent.trim();
+                            const key = name.replace(/\s+/g, '').toLowerCase();
+                            gradeMap[key] = {
+                                'PST': cells[1].textContent.trim(),
+                                'PRS': cells[2].textContent.trim(),
+                                'FTR': cells[3].textContent.trim(),
+                                'BYD': cells[4].textContent.trim(),
+                                'ETR': cells[5].textContent.trim()
+                            };
                         }
                     });
+                    renderSongList();
                 } catch (e) {
-                    console.error('解析等级数据失败:', e);
+                    console.error(e);
                 }
             })
-            .catch(error => console.error('加载等级数据失败:', error));
+            .catch(error => console.error(error));
+
+        function updateAllRowColors() {
+            const sortedPtts = Object.entries(scoreRecords)
+                .filter(item => item[1].score > 0)
+                .sort((a, b) => b[1].ptt - a[1].ptt);
+            const top10 = new Set(sortedPtts.slice(0, 10).map(item => item[0]));
+            const top20 = new Set(sortedPtts.slice(10, 20).map(item => item[0]));
+
+            const allInputs = document.querySelectorAll('.score-input');
+            allInputs.forEach(input => {
+                const key = input.dataset.key;
+                const row = input.closest('.song-row');
+                if (!scoreRecords[key] || scoreRecords[key].score <= 0) {
+                    row.style.backgroundColor = '#f3f4f6';
+                } else if (top10.has(key)) {
+                    row.style.backgroundColor = '#fff8e1';
+                } else if (top20.has(key)) {
+                    row.style.backgroundColor = '#e0f2fe';
+                } else {
+                    row.style.backgroundColor = '';
+                }
+            });
+        }
         
         function renderSongList() {
             const songListEl = document.getElementById('songList');
@@ -117,7 +151,6 @@
                 const targetDiff = Array.isArray(song.difficulties) ? song.difficulties.find(diff => diff.ratingClass === currentFilterDiff) : null;
                 const hasTargetDiff = !!targetDiff;
 
-                // 构建用于搜索的字符串：优先使用谱面级别覆盖的标题/其它语言的 search_title
                 const searchParts = [];
 
                 if (song.search_title && typeof song.search_title === 'object') {
@@ -128,7 +161,6 @@
                     });
                 }
 
-                // 谱面级别的标题覆盖也应参与搜索
                 if (targetDiff && targetDiff.title_localized && targetDiff.title_localized.en) searchParts.push(targetDiff.title_localized.en);
 
                 if (song.title_localized && song.title_localized.en) searchParts.push(song.title_localized.en);
@@ -142,7 +174,6 @@
                 return hasTargetDiff && (titleMatch || artistMatch);
             });
 
-            // 将要渲染的条目映射为包含用于排序的字段的对象
             const mapped = filteredSongs.map(song => {
                 const targetDiff = Array.isArray(song.difficulties) ? song.difficulties.find(diff => diff.ratingClass === currentFilterDiff) : null;
                 const displayTitle = (targetDiff && targetDiff.title_localized && targetDiff.title_localized.en) || (song.title_localized && song.title_localized.en) || song.title || '';
@@ -164,7 +195,6 @@
                 return { song, targetDiff, displayTitle, artistDisplay, constantForCalc, recordKey, score, ptt };
             });
 
-            // 根据当前排序模式对 mapped 进行排序
             if (currentSortIndex && mapped.length > 1) {
                 const mode = sortModes[currentSortIndex];
                 switch (mode) {
@@ -205,7 +235,6 @@
                         break;
                     }
                     default:
-                        // default: 保持 filteredSongs 的原始顺序（mapped 已按 filteredSongs 映射）
                         break;
                 }
             }
@@ -296,10 +325,12 @@
                     
                     localStorage.setItem(STORAGE_KEY, JSON.stringify(scoreRecords));
                     calculateTotalPTT();
+                    updateAllRowColors();
                 });
 
                 songListEl.appendChild(songRow);
             });
+            updateAllRowColors();
         }
 
         function calculatePTT(score, constant) {
@@ -360,7 +391,6 @@
             document.getElementById('totalPtt').textContent = Math.floor(totalPtt * 10000) / 10000;
         }
 
-        // 排序模式与控制
         const sortModes = [
             'default',
             'title-asc',
@@ -394,7 +424,6 @@
             });
         }
 
-        // 导出 / 导入 功能
         const exportButton = document.getElementById('exportButton');
         const importButton = document.getElementById('importButton');
         const importFile = document.getElementById('importFile');
@@ -444,7 +473,6 @@
                         }
 
                         const incoming = obj.scores;
-                        // 合并导入数据（以导入的数据覆盖本地同键条目）
                         scoreRecords = Object.assign({}, scoreRecords, incoming);
                         localStorage.setItem(STORAGE_KEY, JSON.stringify(scoreRecords));
                         renderSongList();
@@ -465,5 +493,4 @@
         }
     </script>
 </body>
-
 </html>
