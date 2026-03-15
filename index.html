@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcaea PTT 计算器</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Arcaea PTT 计算器</h1>
-        
+
         <div class="search-filter-container">
             <input type="text" id="searchInput" placeholder="搜索歌曲名/艺术家...">
             <button id="sortButton" title="切换排序">排序：默认</button>
             <button id="exportButton" class="export-btn" title="导出成绩">导出成绩</button>
             <button id="importButton" class="import-btn" title="导入成绩">导入成绩</button>
             <input type="file" id="importFile" accept=".pttdat" style="display:none">
-            
+
             <div class="difficulty-filter">
                 <span>筛选难度：</span>
                 <input type="radio" name="diffFilter" id="diff0" value="1" checked>
                 <label for="diff0">Past</label>
-                
+
                 <input type="radio" name="diffFilter" id="diff1" value="0">
                 <label for="diff1">Present</label>
-                
+
                 <input type="radio" name="diffFilter" id="diff2" value="2">
                 <label for="diff2">Future</label>
-                
+
                 <input type="radio" name="diffFilter" id="diff3" value="3">
                 <label for="diff3">Beyond</label>
-                
+
                 <input type="radio" name="diffFilter" id="diff4" value="4">
                 <label for="diff4">Eternal</label>
             </div>
@@ -45,7 +47,7 @@
                     <div class="col diff-info">难度/定数</div>
                     <div class="col score-ptt">分数/PTT/等级</div>
                 </div>
-                
+
                 <div id="songList" class="song-list"></div>
             </div>
         </div>
@@ -66,14 +68,14 @@
         const ratingClassMap = ['Present', 'Past', 'Future', 'Beyond', 'Eternal'];
         let currentFilterDiff = 1;
         const gradeMap = {};
-        const gradeFields = ['PRS','PST','FTR','BYD','ETR'];
+        const gradeFields = ['PRS', 'PST', 'FTR', 'BYD', 'ETR'];
 
         fetch('songlist.json')
             .then(response => response.text())
             .then(data => {
                 const songData = JSON.parse(data);
                 allSongs = songData.songs.filter(song => !song.deleted);
-                
+
                 const diffFilterRadios = document.querySelectorAll('input[name="diffFilter"]');
                 diffFilterRadios.forEach(radio => {
                     radio.addEventListener('change', (e) => {
@@ -91,7 +93,7 @@
                 calculateTotalPTT();
             })
             .catch(error => console.error(error));
-            
+
         fetch('grade.html')
             .then(response => response.text())
             .then(data => {
@@ -142,7 +144,7 @@
                 }
             });
         }
-        
+
         function renderSongList() {
             const songListEl = document.getElementById('songList');
             const searchKeyword = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -178,7 +180,12 @@
                 const targetDiff = Array.isArray(song.difficulties) ? song.difficulties.find(diff => diff.ratingClass === currentFilterDiff) : null;
                 const displayTitle = (targetDiff && targetDiff.title_localized && targetDiff.title_localized.en) || (song.title_localized && song.title_localized.en) || song.title || '';
                 const artistDisplay = (targetDiff && targetDiff.artist) || song.artist || '';
-                const nameKey = displayTitle.replace(/\s+/g, '').toLowerCase();
+
+                // 修改点：使用歌曲的主标题（Main Title）作为匹配 gradeMap 的 Key
+                // 这样即使当前是 BYD 难度且显示名为 "Axium Divergence"，也能通过 "Axium Crisis" 匹配到定数
+                const mainTitle = (song.title_localized && song.title_localized.en) || song.title || '';
+                const nameKey = mainTitle.replace(/\s+/g, '').toLowerCase();
+
                 const gradeEntry = gradeMap[nameKey];
                 let constantValue = targetDiff ? targetDiff.rating : 0;
                 if (gradeEntry) {
@@ -199,38 +206,38 @@
                 const mode = sortModes[currentSortIndex];
                 switch (mode) {
                     case 'title-asc':
-                        mapped.sort((a,b) => a.displayTitle.localeCompare(b.displayTitle, undefined, {sensitivity:'base'}));
+                        mapped.sort((a, b) => a.displayTitle.localeCompare(b.displayTitle, undefined, { sensitivity: 'base' }));
                         break;
                     case 'title-desc':
-                        mapped.sort((a,b) => b.displayTitle.localeCompare(a.displayTitle, undefined, {sensitivity:'base'}));
+                        mapped.sort((a, b) => b.displayTitle.localeCompare(a.displayTitle, undefined, { sensitivity: 'base' }));
                         break;
                     case 'diff-asc':
-                        mapped.sort((a,b) => a.constantForCalc - b.constantForCalc);
+                        mapped.sort((a, b) => a.constantForCalc - b.constantForCalc);
                         break;
                     case 'diff-desc':
-                        mapped.sort((a,b) => b.constantForCalc - a.constantForCalc);
+                        mapped.sort((a, b) => b.constantForCalc - a.constantForCalc);
                         break;
                     case 'score-asc': {
-                        const part = mapped.filter(m=>m.score>0).sort((a,b)=>a.score-b.score);
-                        const rest = mapped.filter(m=>m.score<=0);
+                        const part = mapped.filter(m => m.score > 0).sort((a, b) => a.score - b.score);
+                        const rest = mapped.filter(m => m.score <= 0);
                         mapped.splice(0, mapped.length, ...part, ...rest);
                         break;
                     }
                     case 'score-desc': {
-                        const part = mapped.filter(m=>m.score>0).sort((a,b)=>b.score-a.score);
-                        const rest = mapped.filter(m=>m.score<=0);
+                        const part = mapped.filter(m => m.score > 0).sort((a, b) => b.score - a.score);
+                        const rest = mapped.filter(m => m.score <= 0);
                         mapped.splice(0, mapped.length, ...part, ...rest);
                         break;
                     }
                     case 'ptt-asc': {
-                        const part = mapped.filter(m=>m.ptt !== null).sort((a,b)=>a.ptt - b.ptt);
-                        const rest = mapped.filter(m=>m.ptt === null);
+                        const part = mapped.filter(m => m.ptt !== null).sort((a, b) => a.ptt - b.ptt);
+                        const rest = mapped.filter(m => m.ptt === null);
                         mapped.splice(0, mapped.length, ...part, ...rest);
                         break;
                     }
                     case 'ptt-desc': {
-                        const part = mapped.filter(m=>m.ptt !== null).sort((a,b)=>b.ptt - a.ptt);
-                        const rest = mapped.filter(m=>m.ptt === null);
+                        const part = mapped.filter(m => m.ptt !== null).sort((a, b) => b.ptt - a.ptt);
+                        const rest = mapped.filter(m => m.ptt === null);
                         mapped.splice(0, mapped.length, ...part, ...rest);
                         break;
                     }
@@ -303,26 +310,26 @@
                 scoreInput.addEventListener('input', () => {
                     const score = parseInt(scoreInput.value) || 0;
                     const key = scoreInput.dataset.key;
-                    
+
                     if (score > 0) {
                         const { rank, ptt } = calculatePTT(score, constantForCalc);
-                        
+
                         rankEl.textContent = rank;
                         rankEl.className = `rank-badge ${getRankClass(rank)}`;
                         rankEl.classList.remove('no-score');
                         pttEl.textContent = Math.floor(ptt * 10000) / 10000;
                         pttEl.classList.add('has-score');
-                        
+
                         scoreRecords[key] = { score, rank, ptt };
                     } else {
                         rankEl.textContent = '-';
                         rankEl.className = 'rank-badge no-score';
                         pttEl.textContent = constantDisplay;
                         pttEl.classList.remove('has-score');
-                        
+
                         delete scoreRecords[key];
                     }
-                    
+
                     localStorage.setItem(STORAGE_KEY, JSON.stringify(scoreRecords));
                     calculateTotalPTT();
                     updateAllRowColors();
@@ -493,4 +500,5 @@
         }
     </script>
 </body>
+
 </html>
